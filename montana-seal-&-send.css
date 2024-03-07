@@ -198,100 +198,81 @@ a {
     }
 }
 
-.section-2 {
+.section-container {
+    display: flex;
     flex-direction: column;
-    display: flex;
-    background-color: black;
-    justify-content: center;
     align-items: center;
-    min-height: 600px; /* Use min-height instead of height */
-    width: 100%;
-}
-
-.section-2-header-container {
-    display: flex;
     background-color: black;
-    width: 75%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-2-header-container-header-1 {
     color: white;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
 }
 
-.section-2-title-and-picture-container {
+.integration-header h1 {
+    margin-bottom: 20px;
+}
+
+.amazon-integration {
     display: flex;
-    flex-direction: column;
-    background-color: white;
-    justify-content: center;
     align-items: center;
-    width: 75%;
-    height: 160px;
+    justify-content: space-around;
+    width: 100%;
+    transition: transform 0.3s ease;
 }
 
-.section-2-picture-container {
+.amazon-integration:hover {
+    transform: scale(1.05);
+}
+
+.logo-container {
     display: flex;
-    background-color: hsl(0, 0%, 0%);
-    height: 90px;
-    width: 90px;
-    border-radius: 90px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    background: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    border-style: solid;
 }
 
-.section-2-picture-container img {
-    object-fit: cover; /* or contain, depending on the desired effect */
+.logo-container:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.amazon-logo {
     width: 100%;
     height: auto;
 }
 
-.section-2-title-actual-container {
-    margin: 0px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+.integration-content {
+    max-width: 800px;
 }
 
-.section-2-paragraph-container {
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(0, 0%, 0%);
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    height: 160px;
-}
-
-.section-2-paragraph-actual-container {
+.integration-content h2 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 10px;
 }
 
-/* Responsive adjustments */
+.integration-content p {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
-    .section-2-header-container, .section-2-title-and-picture-container, .section-2-paragraph-container {
-        width: 90%; /* Adjust width for smaller screens */
+    .amazon-integration {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .section-2-header-container-header-1, .section-2-title-actual-container, .section-2-paragraph-actual-container {
-        text-align: center; /* Ensure text is centered for readability */
-    }
-
-    .section-2-picture-container {
-        margin: 0 auto; /* Center the picture container */
-        height: 70px; /* Adjust the size of the picture container */
-        width: 70px; /* Adjust the size of the picture container */
-        border-radius: 70px; /* Adjust border-radius to match the new size */
-    }
-
-    .section-2-picture-container img {
-        height: 100%; /* Ensure the image covers the adjusted container size */
+    .logo-container {
+        margin-bottom: 20px;
     }
 }
+
 
 
         .section-3 {
@@ -398,7 +379,7 @@ a {
                         justify-content: center;
                         align-items: center;
                         width: 100%;
-                        min-height: 600px; /* Use min-height instead of height */
+                        min-height: 800px; /* Use min-height instead of height */
                     }
                     
                     .section-4-left-container {
@@ -477,10 +458,9 @@ a {
                         height: 100px;
                     }
                     
-                    .section-4-right-container-input-and-button-container-input-container {
-                        background-color: rgb(218, 221, 226);
-                        width: 300px;
-                        height: 100px;
+                    .section-4-right-container-input-and-button-container-input-container input{
+                        width: 150px;      
+                        height: 40px;                  
                     }
                     
                     .section-4-right-container-button-wrapper {
@@ -533,79 +513,83 @@ a {
                         }
                     }
                     
-    .section-5{
-        background-color: rgb(255, 255, 255);
-        
-        width: 100%;
-        min-height: 600px; /* Use min-height instead of height */
 
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
-        grid-template-rows: auto; /* Rows sized by content */
-        gap: 20px; /* Space between grid items */
-        padding: 40px; /* Padding around the grid */
-        max-width: 1200px; /* Maximum width of the grid */
-        margin: 40px auto; /* Center the grid horizontally with some margin on the top and bottom */
-    }
-    
-    .pricing-header {
-        grid-column: 1 / -1; /* Full width */
-        text-align: center;
-        padding: 20px;
-        background: #1a1a2e; /* Dark blue background for the header */
-        color: #e94560; /* Accent color for the header text */
-        font-size: 1.5em;
-        font-weight: bold;
-        border-radius: 12px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
-    
-    /* Styling for each section. Adjust as needed. */
-    .poly-bags, .shipping-boxes, .cost-per-unit, .fragile-items, .storage-fees {
-        padding: 20px;
-        border-radius: 12px;
-        background: #fff; /* White background for content areas */
-        color: #333; /* Dark text for readability */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        position: relative; /* For pseudo-element positioning */
-        overflow: hidden; /* Ensures that pseudo-elements are clipped to the border radius */
-    }
-    
-    /* Hover effect for boxes */
-    .poly-bags:hover, .shipping-boxes:hover, .cost-per-unit:hover, .fragile-items:hover, .storage-fees:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-    }
-    
-    /* Pseudo-elements for decorative purposes */
-    .poly-bags::before, .shipping-boxes::before, .cost-per-unit::before, .fragile-items::before, .storage-fees::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        right: -50%;
-        background: linear-gradient(45deg, #ffafbd, #ffc3a0);
-        width: 200%;
-        height: 200%;
-        z-index: 0;
-        transition: transform 0.5s ease-in-out;
-        border-radius: 32%;
-        transform: rotate(60deg);
-    }
-    
-    /* Hover effect for the pseudo-elements */
-    .poly-bags:hover::before, .shipping-boxes:hover::before, .cost-per-unit:hover::before, .fragile-items:hover::before, .storage-fees:hover::before {
-        transform: rotate(0deg);
-    }
-    
-    /* Ensuring content is above the pseudo-elements */
-    .poly-bags > *, .shipping-boxes > *, .cost-per-unit > *, .fragile-items > *, .storage-fees > * {
-        position: relative;
-        z-index: 1;
-    }
-    
+                    body {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        line-height: 1.6;
+                        color: #333;
+                        margin: 0;
+                        background: #edf2f7;
+                      }
+                    
+                      .title-pricing-container{
+                        width: 100%;
+                        display: flex;
+                        color: rgb(0, 0, 0);
+                        justify-content: center;
+                      }
+                    
+                      .pricing-section {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        padding: 40px 10px;
+                      }
+                    
+                      .pricing-card {
+                        flex: 0 1 calc(25% - 40px);
+                        margin: 20px;
+                        background: #fff;
+                        border-radius: 15px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                      }
+                    
+                      .pricing-card:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                      }
+                    
+                      .pricing-card header {
+                        padding: 20px;
+                        background: #333333;
+                        color: #fff;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        text-align: center;
+                      }
+                    
+                      .pricing-card p {
+                        padding: 0 20px 15px;
+                        text-align: center;
+                      }
+                    
+                      .price {
+                        font-size: 2.5rem;
+                        text-align: center;
+                        padding: 20px 0;
+                        color: #007bff;
+                      }
+                    
+                    
+                      @media (max-width: 1200px) {
+                        .pricing-card {
+                          flex: 0 1 calc(33.333% - 40px);
+                        }
+                      }
+                    
+                      @media (max-width: 992px) {
+                        .pricing-card {
+                          flex: 0 1 calc(50% - 40px);
+                        }
+                      }
+                    
+                      @media (max-width: 768px) {
+                        .pricing-card {
+                          flex: 0 1 calc(100% - 40px);
+                        }
+                      }
+                    
 
     .section-6{
         display: flex;
@@ -613,7 +597,7 @@ a {
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 600px; /* Use min-height instead of height */
+        min-height: 700px; /* Use min-height instead of height */
         font-family: Arial, Helvetica, sans-serif;
     }
              
