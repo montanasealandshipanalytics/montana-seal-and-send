@@ -416,6 +416,14 @@ a {
     border: 0; /* For iframe */
 }
 
+.submit-button{
+        color: white;
+        background-color: rgb(48, 50, 57);
+        border-style: none;
+        padding: 10px 20px; /* Adjust padding */
+        margin-top: 10px;
+}
+
 .section-4-left-container-google-maps-api-input iframe {
     width: 90%; /* Adjust width to desired size, up to 100% */
     height: 90%; /* Adjust height to maintain aspect ratio */
@@ -680,6 +688,30 @@ a {
         text-align: center; /* Center text for readability */
     }
 }
+
+    .section-7-right-container-wrapper-box-3{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        min-height: 200px;
+        background-color: hsl(0, 0%, 0%);
+    }
+
+    .p1{
+        font-weight: bold;
+        font-size: 17px;
+        color: white;
+    }
+
+    .p2{
+        color: white;
+    }
+
+    .p3{
+        color: white;
+    }
+
+    
 
     .section-8{
         display: flex;

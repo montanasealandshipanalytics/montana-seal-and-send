@@ -36,9 +36,9 @@
 
         <div class="nav-divider-container"></div>
 
-        <div class="contact-me-button-container">
+        <div class="contact-me-button-container" id="contact-me">
             <a>
-                <button class="contact-me-button">CONTACT ME</button>
+                <button class="contact-me-button" id="start-button-1">CONTACT ME</button>
                 </div>
             </a>
     </div>
@@ -57,7 +57,7 @@
                         We offer comprehensive logistics solutions for e-commerce marketplaces, including Fulfillment services, short-term storage solutions, and Amazon FBA prep services. With our experience, we are here to support businesses at every stage of the order process.
                     </p>
 
-                    <button class="left-box-of-section-1-contact-me-button">
+                    <button class="left-box-of-section-1-contact-me-button" id="start-button-2">
                         CONTACT ME
                     </button>
                 </div>
@@ -109,8 +109,8 @@
 
             </div>
 
-            <div class="section-3-right-side-container-button-container">
-                <button class="section-3-right-side-container-button-actual">
+            <div class="section-3-right-side-container-button-container" id="start-button-container">
+                <button class="section-3-right-side-container-button-actual" id="start-button-3">
                     Let's Start!
                 </button>
             </div>
@@ -156,7 +156,7 @@
                                                 <textarea name="message"></textarea>
                                             </label>
                                             <!-- your other form fields go here -->
-                                            <button type="submit">Send</button>
+                                            <button type="submit" class="submit-button" id="submit-button">Send</button>
                                             </form>
 
                         </div>
@@ -220,8 +220,7 @@
 
         <div class="pricing-card pricing-card-1">
           <header>Poly bags:</header>
-          <p><strong>Medium</strong> 19x14x17 $2.50</p>
-          <p><strong>$.50</strong> 6" x 9"6" x 14"8 "x 10"</p>
+          <p><strong>$.50</strong> 6" x 9"6" x 14"8 "x 10" 9" x 12"</p>
           <p><strong>$1.00</strong> 9" x 12"</p>
           <p><strong>$1.50</strong> 20" x 24" +</p>
     
@@ -313,37 +312,34 @@
                 <div class="section-7-right-container-wrapper-box-1">
 
                     <div class="section-7-right-container-wrapper-box-1-h1-1">
-                       <p> COMPANY </p> 
                     </div>
 
                     <div class="section-7-right-container-wrapper-box-1-p1-1">
-                      <p><a>How it works</a></p>  
                     </div>
 
                     <div class="section-7-right-container-wrapper-box-1-p2-1">
-                      <p><a>Pricing</a></p>  
                     </div>
 
                 </div>
 
                 <div class="section-7-right-container-wrapper-box-2">
                     <div class="section-7-right-container-wrapper-box-1-h1-2">
-                      <p> ABOUT</p>  
                     </div>
 
                     <div class="section-7-right-container-wrapper-box-1-p1-2">
-                       <p> <a> Terms & Conditions</a></p> 
                     </div>
 
                     <div class="section-7-right-container-wrapper-box-1-p2-2">
-                      <p><a>Privacy Policy</a></p>  
                     </div>
 
                     
                 </div>
 
                 <div class="section-7-right-container-wrapper-box-3">
-                    
+                    <p class="p1"><a>CONTACT ME</a></p>  
+                    <p class="p2">(406) 899-1191</p>
+                    <p class="p3">Montanasealandsend@gmail.com</p>
+
                 </div>
             </div>
         </div>
@@ -356,6 +352,83 @@
             </div>
         </div>
     </div>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        const startButton1 = document.getElementById('start-button-1');
+        const startButton2 = document.getElementById('start-button-2');
+        const startButton3 = document.getElementById('start-button-3');
+        const contactMeButton = document.getElementById('submit-button');
+
+        // Function to scroll to the middle of the screen
+        function scrollToMiddle(element) {
+            const windowHeight = window.innerHeight;
+            const buttonRect = element.getBoundingClientRect();
+            const middleOffset = buttonRect.top - (windowHeight / 2) + (buttonRect.height / 2);
+            window.scrollBy({ top: middleOffset, behavior: 'smooth' });
+        }
+
+        startButton1.addEventListener('click', function() {
+            scrollToMiddle(contactMeButton);
+        });
+
+        startButton2.addEventListener('click', function() {
+            scrollToMiddle(contactMeButton);
+        });
+
+        startButton3.addEventListener('click', function() {
+            scrollToMiddle(contactMeButton);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const integrationsLink = document.querySelector('.integration-container a');
+        const integrationsSection = document.querySelector('.integration-header'); 
+
+        // Function to scroll to the middle of the screen
+        function scrollToSection(section) {
+            const windowHeight = window.innerHeight;
+            const sectionRect = section.getBoundingClientRect();
+            const middleOffset = sectionRect.top - (windowHeight / 2) + (sectionRect.height / 2);
+            window.scrollBy({ top: middleOffset, behavior: 'smooth' });
+        }
+
+        integrationsLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            scrollToSection(integrationsSection);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const pricingLink = document.querySelector('.pricing-container a');
+        const pricingSection = document.querySelector('.title-pricing-container'); //
+
+        // Function to scroll to the middle of the screen
+        function scrollToSection(section) {
+            const windowHeight = window.innerHeight;
+            const sectionRect = section.getBoundingClientRect();
+            const middleOffset = sectionRect.top - (windowHeight / 2) + (sectionRect.height / 2);
+            window.scrollBy({ top: middleOffset, behavior: 'smooth' });
+        }
+
+        pricingLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            scrollToSection(pricingSection);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqLink = document.querySelector('.FAQ-container a');
+        const faqSection = document.querySelector('.section-6'); // Change this to the actual ID or class of the FAQ section
+
+        faqLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            faqSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    });
+
+    
+    </script>
 </body>
 
 </html>
