@@ -1,0 +1,153 @@
+.footer-h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.footer-h2 {
+    color: white;
+}
+
+.footer-p {
+    color: rgb(196, 196, 196);
+}
+
+.footer-p-main {
+    color: white;
+}
+
+.whiteline-footer {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(15, 15, 56);
+}
+
+.footer-content {
+    width: 1330px;
+    height: 100%;
+}
+
+.top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+}
+
+.top-middle-container-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+}
+
+h3 {
+    color: blue;
+    font-weight: 600;
+}
+
+.top-middle-container-footer-left {
+    width: 50%;
+    height: 100%;
+}
+
+.top-middle-container-footer-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-footer {
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(73, 95, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 130px;
+    padding-left: 130px;
+    border-radius: 10px;
+}
+
+.button-footer:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.middle-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+}
+
+.middle-footer-card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 90%;
+    margin-right: 30px;
+}
+
+.middle-footer-card-title {
+    width: 100%;
+    height: 10%;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+@media (max-width: 768px) {
+    .footer-content, .top-footer, .top-middle-container-footer, .middle-footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-middle-container-footer-left, .top-middle-container-footer-right {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-footer {
+        padding: 10px 60px;
+        font-size: 14px;
+    }
+
+    .middle-footer-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .footer-h1 {
+        font-size: 24px;
+    }
+
+    .footer-h2 {
+        font-size: 20px;
+    }
+
+    .footer-p, .footer-p-main {
+        font-size: 14px;
+        text-align: center;
+    }
+}

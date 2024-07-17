@@ -1,0 +1,194 @@
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    width: 1330px;
+    height: 70%;
+}
+
+.bottom-content1 {
+    display: flex;
+    flex-direction: column;
+    width: 1330px;
+    height: 20%;
+    background-color: rgb(249, 249, 249);
+}
+
+.top-title-bottom-cotent1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+}
+
+.h1-title-s1-bottom {
+    color: black;
+    font-size: 32px;
+}
+
+.bottom-paragraph-bottom-content1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.guaranteeing-s1 {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+}
+
+.checkmark-container-s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.left1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+}
+
+.text-content1 {
+    width: 90%;
+    height: 80%;
+}
+
+.title-span1 {
+    color: red;
+}
+
+.p-span1 {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.button1 {
+    border-radius: 6px;
+    padding: 15px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    margin-right: 30px;
+}
+
+.button1:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.button2 {
+    border-radius: 6px;
+    padding: 15px;
+    border: none;
+    background-color: rgb(15, 15, 56);
+    color: white;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.button2:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.right1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    padding-left: 10px; /* Adjust the padding to move the image to the right */
+}
+
+.picture-container1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.tower-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    object-position: 60% center; /* Adjust this value to move the image focus */
+}
+
+.tower-photo:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .content1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left1, .right1 {
+        width: 100%;
+    }
+
+    .bottom-content1, .top-title-bottom-cotent1, .bottom-paragraph-bottom-content1, .guaranteeing-s1 {
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 36px;
+    }
+
+    .h2 {
+        font-size: 16px;
+    }
+
+    .p {
+        font-size: 18px;
+    }
+
+    .button1, .button2 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
