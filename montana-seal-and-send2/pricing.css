@@ -1,0 +1,53 @@
+.mss-body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.mss-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.mss-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mss-subheading {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.mss-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mss-list-item {
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.mss-note {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.mss-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.mss-link:hover {
+    text-decoration: underline;
+}

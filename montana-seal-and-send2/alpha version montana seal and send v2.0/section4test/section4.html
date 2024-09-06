@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="secrtion4.css">
+</head>
+
+<body>
+    <div class="section-6">
+        <div class="container-wrapper">
+            <div class="title-container">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+            <details>
+                <summary>Do you offer a product/invoices photo-taking service (in case of un-gating Amazon categories),
+                    and how much?</summary>
+                <div class="answer-to-question-container-1">Yes, my cost per unit includes: Receiving, Inspection, Item
+                    pictures if damaged, Label removal, and Labeling (FNSKU, Fragile, Suffocation warning, Single unit -
+                    do not open).</div>
+            </details>
+
+            <details>
+                <summary>Is there a subscription fee or monthly fee? If there is, how much about it?</summary>
+                <div class="answer-to-question-container-1">I charge a one-time set up (registration) fee of $50 to get
+                    started.</div>
+            </details>
+
+            <details>
+                <summary>Do you help to keep the receipt & invoices? If you do, how long would you generally help to
+                    keep?</summary>
+                <div class="answer-to-question-container-1">Yes, I keep all receipts, invoices, and documents pertaining
+                    to your shipments on file for 1 year.</div>
+            </details>
+
+            <details>
+                <summary>Do you require a minimum quantity of each shipment?</summary>
+                <div class="answer-to-question-container-1">No.</div>
+            </details>
+
+            <details>
+                <summary>What's the turnaround time of your prep center?</summary>
+                <div class="answer-to-question-container-1">This depends on your volume. I can typically turn around
+                    inventory in24-48 hours. I work with all sellers to create a shipping plan that will suit their
+                    needs.</div>
+            </details>
+
+            <details>
+                <summary>How to setup payments?</summary>
+                <div class="answer-to-question-container-1">Contact me directly to setup payments.</div>
+            </details>
+
+            <details>
+                <summary>Do you offer storage service for products and the cost?</summary>
+                <div class="answer-to-question-container-1">Storage is free for items for 30 days</div>
+            </details>
+            <!-- Start Of Section 4 Script-->
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const faqLink = document.querySelector('.FAQ-container a');
+                    const faqSection = document.querySelector('.section-6'); // Change this to the actual ID or class of the FAQ section
+
+                    faqLink.addEventListener('click', function (event) {
+                        event.preventDefault(); // Prevent default anchor behavior
+                        faqSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    });
+                });
+
+
+            </script>
+            <!-- End Of Section 4 Script-->
+        </div>
+    </div>
+</body>
+
+</html>

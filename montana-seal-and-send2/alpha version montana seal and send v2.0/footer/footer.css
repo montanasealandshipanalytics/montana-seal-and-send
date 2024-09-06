@@ -1,0 +1,112 @@
+html, body {
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.whiteline-footer {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(15, 15, 56);
+}
+
+.footer-content {
+    width: 1330px;
+    height: 100%;
+}
+
+.top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+}
+
+.top-middle-container-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+}
+
+h3{
+    color: blue;
+    font-weight: 600;
+}
+
+.top-middle-container-footer-left {
+    width: 50%;
+    height: 100%;
+}
+
+h1 {
+    margin: 0px;
+    color: white;
+}
+
+.top-middle-container-footer-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-footer {
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(73, 95, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 130px;
+    padding-left: 130px;
+    border-radius: 10px;
+}
+
+.middle-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+}
+
+.middle-footer-card{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.middle-footer-card-title{
+    width: 100%;
+    height: 20%;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: rgb(223, 223, 223);
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
